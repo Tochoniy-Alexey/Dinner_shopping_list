@@ -1,0 +1,120 @@
+body{
+	border: 20px solid #fff;
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	padding:0;
+	margin: 0;
+}
+*{
+	transition: all .1s ease-in;
+}
+
+.header{
+	background-color: #4A4F56;
+	color: #E97D7E;
+	text-align: center;
+}
+
+h1{
+	margin: 0;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.header p{
+	margin: 0;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.main{
+	background-color: #3B3F45;
+	padding: 30px;
+	margin: 0;
+
+}
+.footer{
+	background-color: #4A4F56;
+	color: #E97D7E;
+	text-align: center;
+	position: relative;
+	height: 70px;
+	width: 50%;
+	margin:50px auto;
+
+}
+.footer p{
+	padding: 20px;
+	margin: 0;
+	font-size: 25px;
+}
+
+div.stroka{
+	box-sizing:border-box;
+}
+.stroka{
+	position: relative;
+	width: 50%;
+	height: 70px;
+	margin:0 auto;
+	background-color: #88839E;
+}
+label{
+	padding:20px 100px 30px 0;
+}
+
+.label{
+	color: #FFF4E9;
+	font-size: 25px;
+}
+.scobki{
+	color: #B9C5D5;
+	font-size: 15px;
+}
+.scobki:before{
+	content:'(';
+}
+.scobki:after{
+	content:')';
+}
+div .stroka:nth-child(2n){
+	background-color: #7A7593;
+}
+
+
+input[type="checkbox"] {
+	display:none;
+}
+
+.favicon {
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background: url(favicon.png) no-repeat;
+	margin: 15px;
+}
+
+.favicon,.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.stroka:hover{
+	background-color:#625E77;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+
+div.stroka:active{
+	background-color: #E97D7E;
+}
+
+input:checked+.favicon{
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background: url(favicon2.png) no-repeat;
+	margin: 15px;
+}
+input:checked+span+span{
+	text-decoration: line-through;
+}
